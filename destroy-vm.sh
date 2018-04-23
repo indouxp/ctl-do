@@ -55,9 +55,9 @@ $tugboat wait $droplet -i $latestdroplet -s off
 $tugboat snapshot $snapshot $droplet -i $latestdroplet
  
 # After processing, it turn on. So wait it.
-# 処理が終わると、自動的に起動する。そのため、それを待つ
+# 処理が終わると、自動的に起動する。そのため、それを待つ <- 自動的には起動しない
  
-$tugboat wait $droplet -i $latestdroplet -s active
+#$tugboat wait $droplet -i $latestdroplet -s active
  
 # Destroy the droplet.
 # ドロップレトの削除
