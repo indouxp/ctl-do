@@ -24,7 +24,12 @@ snapshot='snapshot-01'
 # 一時ファイル名生成
  
 tempfile=`mktemp`
- 
+
+TERM() {
+  rm -f ${tempfile:?}
+}
+
+trap 'TERM' 0
  
 # Display size menu.
 # サイズメニューの表示

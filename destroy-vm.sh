@@ -23,6 +23,12 @@ snapshot='snapshot-01'
 # 一時ファイル名生成
  
 tempfile=`mktemp`
+
+TERM() {
+  rm -f ${tempfile:?}
+}
+
+trap 'TERM' 0
  
 # Get droplets.
 # 起動中のドロップレットの取得

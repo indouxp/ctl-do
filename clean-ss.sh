@@ -19,12 +19,16 @@ snapshot='snapshot-01'
  
 remain='1'
  
- 
- 
 # Make temporay file name
 # 一時ファイル名生成
  
 tempfile=`mktemp`
+
+TERM() {
+  rm -f ${tempfile:?}
+}
+
+trap 'TERM' 0
  
 # Get images.
 # イメージの取得
