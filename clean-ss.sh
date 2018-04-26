@@ -2,6 +2,7 @@
 ###############################################################################
 # REFERENCE:https://kore1server.com/247
 # Copyright Hirohisa Kawase
+# tugboatの設定に依存する
 ###############################################################################
  
 # Specify path to your tugboat command if needed.
