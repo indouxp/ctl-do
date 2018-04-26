@@ -3,6 +3,34 @@
 # REFERENCE:https://kore1server.com/247
 # Copyright Hirohisa Kawase
 # tugboatの設定に依存する
+# access_tokenは、Applications & APIの、Personal access tokens
+# client_idは、Applications & APIの、Spaces access keys
+# api_keyは、Applications & APIの、Spaces access keysのSecret
+#
+#0 180426-175505 indou@tk2-259-39305:ctl-do:$ ls -l ~/.tugboat
+#-rw-------. 1 indou indou 452  4月 26 17:50 /home/indou/.tugboat
+#0 180426-175510 indou@tk2-259-39305:ctl-do:$ cat  ~/.tugboat
+#---
+#authentication:
+#  access_token: ****************************************************************
+#  client_id: ********************
+#  api_key: *******************************************
+#connection:
+#  timeout: 10
+#ssh:
+#  ssh_user: root
+#  ssh_key_path: "~/.ssh/id_rsa_do4sakura"
+#  ssh_port: '22'
+#defaults:
+#  region: 'sgp1'
+#  image: '32456030'
+#  size: '1gb'
+#  ssh_key: '20035220'
+#  private_networking: 'false'
+#  backups_enabled: 'false'
+#  ip6: 'false'
+#0 180426-175514 indou@tk2-259-39305:ctl-do:$
+#
 ###############################################################################
  
 # Specify path to your tugboat command if needed.
